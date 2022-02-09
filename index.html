@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document object model | Event</title>
+
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  
+  <header>
+    <h1 class="title" onclick="console.log('HI')">
+      DOM 
+      <span class="sub-title make-white">Events</span>
+    </h1>
+
+    <button class="btn" id="main-btn" onclick="change();">
+      <span class="btn-text">Click me</span>
+    </button>
+
+    <button class="btn" id="main-btn-2" onclick="printHi();">
+      <span class="btn-text">Click me</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="box-family">
+      <div class="grand-parent">
+        <div class="parent"> 
+          <div class="child"></div>
+        </div>
+      </div>
+      <div class="button-container" style="margin-top: 2rem;">
+        <button class="btn" id="color-pink">
+          <span class="btn-text">Pink</span>
+        </button>
+    
+        <button class="btn" id="color-red">
+          <span class="btn-text">Red</span>
+        </button>
+    
+        <button class="btn " id="color-blue">
+          <span class="btn-text">Blue</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="user-input">
+      <div class="display">
+        <div class="space">
+        <h3 id="full-name">Display</h3>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="first-name">
+          <label for="name">First Name</label>
+          <input type="text" name="first name" id="f-name" placeholder="First Name">
+        </div>
+
+        <div class="last-name">
+          <label for="name">Last Name</label>
+          <input type="text" name="last name" id="l-name" placeholder="Last Name">
+        </div>
+      </div>
+      <button class="btn" id="submit-btn" type="submit">
+        <span class="btn-text">Submit</span>
+      </button>
+
+    </section>
+    
+    <section class="data-entry">
+
+      <div class="entry-box">
+        <label for="name">Student Name</label>
+        <br>
+        <input type="text" name="name" id="student-name" placeholder="Student Name">
+        <br>
+        <button class="btn" id="add" type="submit">
+          <span class="btn-text">Add</span>
+        </button>
+      </div>
+
+      <div class="students-name">
+        <h4 class="sec-title">Student list</h4>
+        <div class="names" id="name-box"></div>
+      </div>
+      
+    </section>
+  </main>
+
+  
+
+  <footer>
+
+  </footer>
+  <script src="./app/js/script.js"></script>
+</body>
+</html>

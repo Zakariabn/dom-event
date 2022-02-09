@@ -1,0 +1,253 @@
+/*  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+:root {
+  --white: rgb(230, 230, 230);
+  --main-color: skyblue;
+
+  --bg-color: rgb(45, 49, 70);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: rgb(45, 49, 70);
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 3rem;
+  color: skyblue;
+}
+.sub-title {
+  display: block;
+  font-size: 2rem;
+  color: palevioletred;
+}
+
+/* button style  */
+.btn {
+  background-color: skyblue;
+  border: none;
+  border-radius: 3rem;
+  padding: .5rem 1rem;
+  color: rgb(45, 49, 70);
+  font-weight: bold;
+  transition: all .15s ease;
+  filter: drop-shadow(0px 3px 0px rgba(135, 207, 235, 0.315));
+}
+.btn-text {
+  /* filter: drop-shadow(1px 2px 1px gray); */
+}
+.btn:hover {
+  color: rgb(91, 100, 145); 
+  cursor: pointer;
+}
+.btn:active {
+  filter: none;
+  transform: translateY(2px);
+  font-size: bolder;
+}
+main {
+  margin-top: 2rem;
+  
+}
+
+
+  /* box family style  */
+.box-family {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grand-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 160px;
+  height: 160px;
+  background-color: skyblue;
+  ;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 100px;
+  background-color:rgb(45, 49, 70);
+}
+.child {
+  width: 50px;
+  height: 50px;
+  background-color:rgb(230, 230, 230) ;
+}
+
+
+
+  /* Uniq button color */
+#color-red {
+  color: rgb(185, 68, 68);
+}
+#color-pink {
+  color: rgb(150, 33, 89);
+}
+#color-blue {
+  color: rgb(31, 31, 85);
+}
+
+
+
+/* css event */
+.make-white {
+  color: white;
+}
+.make-Blue {
+  color: blue;
+}
+
+  /* user input sectoin style  */
+.user-input {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.display {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem .5rem;
+  background-color: transparent;
+  border-radius: 15px;
+  box-shadow:   0px 0px 10px rgb(62, 69, 100),
+                inset 0px 0px 10px rgb(46, 51, 73);
+  margin-bottom: 2rem;
+  
+}
+.space {
+  overflow : hidden;
+}
+#full-name {
+  color: skyblue;
+  font-size: 1rem;
+}
+
+.container {
+
+}
+.first-name {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.last-name {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.user-input label {
+  color: white;
+  align-self: flex-start;
+  font-size: .8rem;
+}
+.user-input input {
+  width: 150px;
+  height: 25px;
+  background-color: rgb(45, 49, 70);
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  padding: 0 .5rem;
+}
+.user-input input:focus {
+  outline: none;
+  color: white;
+}
+
+  /* Student name list entry */
+.data-entry {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.entry-box {
+  margin-right: 1rem;
+}
+.entry-box label {
+  color: white;
+  margin: 20px;
+}
+.entry-box input {
+  margin-bottom: 1rem;
+  height: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--white);
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+}
+.entry-box input:focus {
+  outline: none;
+}
+.entry-box input::placeholder {
+  font-weight: normal;
+}
+
+.students-name {
+  width: auto;
+  height: 250px;
+  margin-left: 1rem;
+  border: 1px solid var(--white);
+  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+.students-name::-webkit-scrollbar {
+  width: 5px;
+}
+.students-name::-webkit-scrollbar-track {
+  background-color: rgb(190, 190, 190);
+}
+.students-name::-webkit-scrollbar-thumb {
+  background-color: var(--bg-color);
+}
+.sec-title {
+  color: var(--bg-color);
+  background-color: var(--main-color);
+  box-shadow: 0 5px 10px var(--bg-color);
+  padding: .5rem 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid var(--main-color);
+  position: sticky;
+  top: 0;
+}
+
+.names {
+  color: var(--main-color);
+}
+.names p:nth-child(even) {
+  color: var(--white);
+}
+
+/* Footer of this site */
+footer {
+  margin-top: 5rem;
+  height: 50px;
+  width: 100vw;
+  background-color: rgb(58, 23, 41);
+} 
